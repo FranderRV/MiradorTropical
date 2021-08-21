@@ -18,8 +18,8 @@ public class Email {
 		
 		try {
 
-			String remitente = "miradorPHR@gmail.com";
-			String contrasena = "miraDOOR2019";
+			String remitente = "correo@gmail.com";
+			String contrasena = "contrasena";
 			this.receptor = receptor;
 			this.asunto = asunto;
 			this.mensaje= mensaje;
@@ -28,8 +28,8 @@ public class Email {
 			Properties props = System.getProperties();
 		    props.put("mail.smtp.host", "smtp.gmail.com");  //El servidor SMTP de Google
 		    props.put("mail.smtp.user", remitente);
-		    props.put("mail.smtp.clave", "miraDOOR2019");    //La clave de la cuenta
-		    props.put("mail.smtp.auth", "true");    //Usar autenticación mediante usuario y clave
+		    props.put("mail.smtp.clave", contrasena);    //La clave de la cuenta
+		    props.put("mail.smtp.auth", "true");    //Usar autenticaciÃ³n mediante usuario y clave
 		    props.put("mail.smtp.starttls.enable", "true"); //Para conectar de manera segura al servidor SMTP
 		    props.put("mail.smtp.port", "587"); //El puerto SMTP seguro de Google
 
